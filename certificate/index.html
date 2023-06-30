@@ -1,0 +1,42 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<head>
+    <title>Certificate</title>
+
+  
+</head>
+
+<body>
+  <div id="dd">
+    <div style="text-align: center; margin-left: -30vh; margin-top: 20vh;">
+    <input type="text" name="" placeholder="Enter Full Name"><br>
+    <br><input id="sj" type="text" subject="" placeholder="Subject"><br> 
+    <br><button  style="margin-left: 50vh;">Genrator</button>
+  </div>
+  </div>
+<div id="div1" style="width:50%;height:70%;display:none;background-color:lavender; margin-left: auto; margin-right: auto;">
+  <img src="programmers point.png" height="15%" width="30%">
+<h1 style="text-align: center;">Certificate<br> of Appriciation</h1>
+<h3 style="text-align: center;" >This Is to Certify That</h3>  <h4 id="h2" style="text-align: center;" ></h4>
+<h4 id="h3" style="text-align: center;"></h4>
+<p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, quasi iusto. Provident, qui quis? Ipsa modi error eveniet animi porro temporibus ratione veritatis, perferendis inventore blanditiis, consectetur odio architecto itaque!</p>
+        <h4 style="text-align: start; margin-top: 12vh; margin-left: 10vh;"><u>Faculty Signature</u></h4>
+        <h4 style="text-align: end; margin-top: -5vh; margin-right: 10vh;"><u>Student Signature</u></h4>
+</div>
+  <script>
+    $(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeIn(3000);
+    $("#dd").fadeOut();
+   
+  });
+   $("button").click(function(){
+     var t=$("input").val();
+     $("#h2").text(t);
+   }); 
+   $("button").click(function(){
+     var t=$("#sj").val();
+     $("#h3").text(t);
+   });
+});
+  </script>
+  </body>
